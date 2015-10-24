@@ -15,13 +15,6 @@
 #
 ######################################################################
 
-#########################---System---###################################
-%model_build_feature_model_name			b2
-%model_build_feature_ap_processor		exynos3250
-%model_build_feature_cp_processor		none
-
-
-
 #########################---APPFW---###################################
 
 
@@ -35,8 +28,7 @@
 %model_build_feature_bt_disable_audio_call	1
 %model_build_feature_bt_disable_audio_media	0
 %model_build_feature_bt_disable_health		1
-%model_build_feature_nfc        0
-%model_build_feature_smartcard  0
+
 
 #########################---Graphics---###################################
 
@@ -49,9 +41,8 @@
 
 
 #########################---Location---###################################
-%model_build_feature_location_position  0
-%model_build_feature_location_position_gps  0
-%model_build_feature_location_position_wps  0
+%model_build_feature_location_geofence  0
+
 
 
 #########################---Multimedia---##################################
@@ -64,7 +55,7 @@
 
 
 #########################---UIFW---########################################
-%model_build_feature_formfactor    rectangle
+%model_build_feature_formfactor    circle
 
 
 

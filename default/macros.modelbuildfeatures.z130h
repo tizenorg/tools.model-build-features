@@ -30,7 +30,7 @@
 %model_build_feature_bt_disable_audio_call	0
 %model_build_feature_bt_disable_audio_media	0
 %model_build_feature_bt_disable_health		0
-%model_build_feature_nfc	1
+%model_build_feature_nfc	0
 %model_build_feature_smartcard	1
 %model_build_feature_wlan_adhoc_disable	1
 %model_build_feature_wlan_board_atheros	0
@@ -40,8 +40,7 @@
 %model_build_feature_wlan_board_steconn	0
 %model_build_feature_wlan_changeable_scan_time	1
 %model_build_feature_wlan_check_deepsleep	1
-%model_build_feature_wlan_concurrent_mode	0
-%model_build_feature_wlan_concurrent_mode_in_same_channel	0
+%model_build_feature_wlan_concurrent_mode	1
 %model_build_feature_wlan_dual_band_support	1
 %model_build_feature_wlan_get_frequency	1
 %model_build_feature_wlan_hotspot2_0	1
@@ -57,6 +56,7 @@
 %model_build_feature_wlan_wps_disable	1
 %model_build_feature_network_tethering_disable	0
 %model_build_feature_wlan_wearable	0
+%model_build_feature_fmradio	1
 
 #########################---Graphics---###################################
 %model_build_feature_graphics_gpu_info	mali400
@@ -101,5 +101,11 @@
 %model_build_feature_formfactor    rectangle
 
 #########################---Graphics---########################################
-%model_build_feature_display_resolution 720x1280
+%model_build_feature_display_resolution 480x800
+
+
+
+
+
+
 

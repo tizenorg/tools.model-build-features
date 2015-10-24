@@ -2,7 +2,7 @@
 
 Name:       model-build-features
 Summary:    Model Build Feature configuration file for optimize packages-listing
-Version:    0.7
+Version:    0.4
 Release:    %{release_prefix}
 Group:      Development/System
 Source:     %{name}-%{version}.tar.gz
@@ -23,18 +23,24 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_sysconfdir}/rpm/
 cp default/macros.modelbuildfeatures.default  default/macros.modelbuildfeatures
 %if "%{?tizen_profile_name}" == "mobile"
+%if "%{?tizen_target_name}" == "Z130H"
+cp default/macros.modelbuildfeatures.z130h  default/macros.modelbuildfeatures
+%else
+%if "%{?tizen_target_name}" == "Z300H"
+cp default/macros.modelbuildfeatures.z300h  default/macros.modelbuildfeatures
+%else
 cp default/macros.modelbuildfeatures.m0  default/macros.modelbuildfeatures
-%endif 
+%endif
+%endif
+%else
 %if "%{?tizen_profile_name}" == "wearable"
 cp default/macros.modelbuildfeatures.b2  default/macros.modelbuildfeatures
+%else
+%if "%{?tizen_profile_name}" == "tv"
+cp default/macros.modelbuildfeatures.hawkp  default/macros.modelbuildfeatures
 %endif
-%if "%{_repository}" == "emulator-circle"
-cp default/macros.modelbuildfeatures.wc1  default/macros.modelbuildfeatures
-%endif 
-%if "%{_repository}" == "target-b3"
-cp default/macros.modelbuildfeatures.b3  default/macros.modelbuildfeatures
-%endif 
-
+%endif
+%endif
 install -m 644 default/macros.modelbuildfeatures %{buildroot}%{_sysconfdir}/rpm
 
 

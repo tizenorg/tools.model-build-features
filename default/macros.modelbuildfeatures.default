@@ -40,8 +40,7 @@
 %model_build_feature_wlan_board_steconn	0
 %model_build_feature_wlan_changeable_scan_time	1
 %model_build_feature_wlan_check_deepsleep	1
-%model_build_feature_wlan_concurrent_mode	0
-%model_build_feature_wlan_concurrent_mode_in_same_channel	0
+%model_build_feature_wlan_concurrent_mode	1
 %model_build_feature_wlan_dual_band_support	1
 %model_build_feature_wlan_get_frequency	1
 %model_build_feature_wlan_hotspot2_0	1
@@ -78,6 +77,7 @@
 %model_build_feature_location_position	1
 %model_build_feature_location_position_gps	1
 %model_build_feature_location_position_wps	0
+%model_build_feature_location_geofence  1
 
 
 
@@ -90,13 +90,17 @@
 #########################---Telephony---###################################
 %model_build_feature_network_dsds	0
 %model_build_feature_telephony_cdma	0
+%model_build_feature_ens_enable		0
 %model_build_feature_telephony_display_lu_reject_cause	0
 %model_build_feature_connect_default_connection_without_timer	0
+%model_build_feature_imc_nitz_specific 0
 
 #########################---UIFW---########################################
 %model_build_feature_uifw_wm_use_desktopmode	0
 %model_build_feature_formfactor    rectangle
 
+#########################---Graphics---########################################
+%model_build_feature_display_resolution 720x1280
 
 
 

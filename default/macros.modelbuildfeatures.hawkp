@@ -14,6 +14,7 @@
 #	%model_build_feature_wlan_disable_5g 0
 #
 ######################################################################
+%model_build_feature_tv	0
 
 #########################---APPFW---###################################
 %model_build_feature_appfw_capture_snapshot	1
@@ -94,12 +95,16 @@
 %model_build_feature_ens_enable		0
 %model_build_feature_telephony_display_lu_reject_cause	0
 %model_build_feature_connect_default_connection_without_timer	0
-%model_build_feature_imc_nitz_specific 1
+%model_build_feature_imc_nitz_specific 0
 
 #########################---UIFW---########################################
 %model_build_feature_uifw_wm_use_desktopmode	0
 %model_build_feature_formfactor    rectangle
 
-#########################---Graphics---########################################
-%model_build_feature_display_resolution 720x1280
+
+
+
+
+
+
 
